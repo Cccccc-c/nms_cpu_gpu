@@ -70,8 +70,8 @@ int main()
   	
 	int count=6000;
 	std::map<int,std::list<Detect2dObject>> m;
-	in.open("../boxes.txt"); //y1, x1, y2, x2
-	in1.open("../scores.txt");
+	in.open("../data/boxes.txt"); //y1, x1, y2, x2
+	in1.open("../data/scores.txt");
     if (in.is_open() && in1.is_open()) {
         int class_id = 0;
         while(getline(in, line)){
